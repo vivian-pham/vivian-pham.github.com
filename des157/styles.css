@@ -41,7 +41,7 @@ span {
     position: absolute;
     width: 100px;
     height: 100px;
-    left: 15%;
+    left: 12%;
     top: 20%;
     transition: transform ease 1s;
 }
