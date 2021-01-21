@@ -36,8 +36,9 @@ span {
     height: 250px;
     position: relative;
 }
+ /* fish animation */
 
-#fishmove {
+#fish1 {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -46,15 +47,30 @@ span {
     transition: transform ease 1s;
 }
 
-#fishmove:hover {
+#fish1:hover {
     transform: rotate(270deg);
 }
+
+#fish2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 80%;
+    top: 20%;
+    transition: transform ease 1s;
+}
+
+#fish2:hover {
+    transform: rotate(270deg);
+}
+/*waves animation*/
 
 .waves {
     overflow: hidden;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
 }
+
 #wave1 {
     position: absolute;
     width: 200%;
