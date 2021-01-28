@@ -8,26 +8,47 @@
 <body>
     <h1>Username Generator</h1>
 
+    <!-- program creates a randomized username based on two keywords and sets a random time to be generated -->
+
     <script>
 
-        var userInput = ("Welcome to Username Generator. What's your name?", "");
+        var userInput = prompt("Welcome to Username Generator. What's your name?", "");
 
         var objects = ['potato', 'apple', 'rocket', 'gamer', 'hero'];
         var adjective = ['strong', 'fancy', 'sleepy', 'crazy', 'lazy'];
 
+        //creates loading time elapsed
         function loading(username) {
-            username = Math.abs(name.length-10);
-            for ( var i=0; i<name; i++) {
-                console.log(`Your user name is generating in ${i} seconds`);
+            username = Math.abs(username.length-1);
+            for ( var i=0; i<username; i++) {
+                console.log(`Your user name has been generating for ${i} seconds`);
             }
         }
 
         function pickObject(username) {
-            var name = Math.floor(name.length % 2)
-            var pickobject = 
+            var usernameLength = Math.floor(username.length % 4);
+            var chooseObject = objects[usernameLength];
+            return chooseObject;
         }
 
+        function pickAdjective(username) {
+            var adjectiveLength = Math.floor(username.length % 4);
+            var chooseadj = adjective[adjectiveLength];
+            return chooseadj;
+        }
+        
+        if (userInput == null || userInput =="") {
+            console.log("I can't start without your name");
+        }
 
+        else {
+            loading (userInput);
+
+            var userNameOne = pickObject(userInput);
+            var userNameTwo = pickAdjective(userInput);
+
+            console.log(`Your username should be ${userNameOne}${userNameTwo}`);
+        }
     </script>
 
 </body>
