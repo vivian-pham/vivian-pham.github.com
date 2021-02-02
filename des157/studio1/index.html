@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs 2.0</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Menu</h1>
+
+    <form id="formInput">
+
+    <h3>Create your own special dish</h3>
+
+    <label for="fname">Your Name</label>
+    <input type="text" name="fname" id="fname" required>
+
+    <label for="veggie">A Vegetable</label>
+    <input type="text" name="veggie" id="veggie" required>
+
+    <label for="protein">A Protein</label>
+        <select id="protein" required>
+            <option value="">---</option>
+            <option value="Beef">Beef</option>
+            <option value="Pork">Pork</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Duck">Duck</option>
+            <option value="Tofu">Tofu</option>
+            <option value="Duck">Impossible Meat</option>
+        </select>
+
+    <label for="method">Cooking Method</label>
+    <input type="text" name="method" id="method" required>
+
+    <label for="texture">Texture</label>
+    <input type="text" name="texture" id="texture" required>
+
+    <label for="adjOne">Adjective 1</label>
+    <input type="text" name="adjOne" id="adjOne" required>
+
+    <label for="adjTwo">Adjective 2</label>
+    <input type="text" name="adjTwo" id="adjTwo" required>
+
+    <label for="flavor">Flavor</label>
+    <input type="text" name="flavor" id="flavor" required>
+
+    <input type="submit" name="submit" id="submit" value="What's Cooking?">
+   
+
+    </form>
+
+    <div id="card">
+        <article id="specialOutput"></article>
+    </div>
+
+    <div id="menupic">
+    <img src="images/dish.svg" width=250px height=250px alt="servingdish">
+    </div>
+
+    <footer>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmichellegore.github.io%2Fdes157%2Fstudio1%2Fmadlibs">Valid HTML 5</a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmichellegore.github.io%2Fdes157%2Fstudio1%2Fmadlibs&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </footer>
+    
+</body>
+</html>

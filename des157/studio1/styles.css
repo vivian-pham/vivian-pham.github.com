@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFCF9;
+    background-image: url(images/utensil.svg);
+    background-size: 100px;
+    background-repeat: space;
+
+}
+
+form {
+    width: 500px;
+}
+
+label {
+    float: left;
+    font-family: 'Lekton', sans-serif;
+    font-weight: 1000;
+    padding: 5px;
+    margin-left: 100px;
+    width: 120px;
+   
+}
+
+input {
+   position: relative;
+   display: inline-block;
+   margin-left: 100px;
+   margin-bottom: 10px;
+   padding: 2.5px;
+   border-radius: 10px;
+   border-width: 1px;
+}
+
+#submit {
+    position: relative;
+    width: 175px;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 35px;
+    font-family: 'Lekton', sans-serif;
+    font-weight: 1000;
+    background-color: goldenrod;
+    border-color: transparent;
+}
+
+
+select{
+    position: relative;
+    margin-left: 100px;
+    padding: 2.5px;
+    margin-bottom: 10px;
+    width: 165.5px;
+    border-radius: 10px;
+}
+
+h3 {
+    font-family: 'Lobster Two', cursive;
+    color: goldenrod;
+    margin-left: 100px;
+    padding-bottom: 25px;
+    margin-top: -20px;
+    font-size: 30px;
+}
+
+/* #special {
+    margin: auto;
+    width: 35%; 
+} */
+
+h2 {
+    font-family: 'Lekton', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    padding-bottom: 20px;
+    font-size: 100px;
+}
+
+article {
+    font-family: 'Lekton', sans-serif;
+    justify-content: center;
+    font-size: 20px;
+}
+
+div {
+    position: relative;
+    float: right;
+    margin-top: -400px;
+}
+
+#menupic {
+  top: -220px;
+  left: -24%;
+}
+
+#card {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    top: 100%;
+    right: 12%;
+    border-width: thin;
+    box-shadow: 5px 5px 13px -5px rgba(0,0,0,0.5);
+    padding: 50px 50px 0px 50px;
+}
+
+footer {
+    position: relative;
+    font-family: 'Lekton', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer a:hover {
+    color: goldenrod;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
