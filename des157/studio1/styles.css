@@ -18,7 +18,7 @@ form {
 label {
     float: left;
     font-family: 'Lekton', sans-serif;
-    font-weight: 1000;
+    font-weight: bolder;
     padding: 5px;
     margin-left: 100px;
     width: 120px;
@@ -42,7 +42,7 @@ input {
     margin-top: 30px;
     border-radius: 35px;
     font-family: 'Lekton', sans-serif;
-    font-weight: 1000;
+    font-weight: bolder;
     background-color: goldenrod;
     border-color: transparent;
 }
