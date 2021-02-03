@@ -4,6 +4,7 @@
 
     const formInput = document.querySelector('#formInput');
     const specialOutput = document.querySelector('#specialOutput');
+    const startOver = document.querySelector('#startOver');
 
     formInput.addEventListener('submit', function(event){
 
@@ -26,6 +27,10 @@
 
             specialOutput.innerHTML = mySpecial;
             specialOutput.className = "output";
+
+            startOver.classList.remove('hidden');
+            startOver.classList.add('reveal');
+
         }
 
         else{
@@ -33,6 +38,8 @@
             specialOutput.innerHTML = mySpecial;
             specialOutput.className = "error";
         };
+
+
 
     });
 

@@ -8,20 +8,22 @@ body {
     background-image: url(images/utensil.svg);
     background-size: 100px;
     background-repeat: space;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 form {
-    width: 500px;
+    width: 700px;
 }
 
 label {
     float: left;
     font-family: 'Lekton', sans-serif;
     font-weight: bolder;
+    font-size: 18px;
     padding: 5px;
     margin-left: 100px;
-    width: 120px;
+    width: 150px;
    
 }
 
@@ -30,8 +32,8 @@ input {
    display: inline-block;
    margin-left: 100px;
    margin-bottom: 10px;
-   padding: 2.5px;
-   border-radius: 10px;
+   padding: 7.5px;
+   border-radius: 20px;
    border-width: 1px;
 }
 
@@ -39,10 +41,10 @@ input {
     position: relative;
     width: 175px;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 35px;
     font-family: 'Lekton', sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: goldenrod;
     border-color: transparent;
 }
@@ -51,10 +53,10 @@ input {
 select{
     position: relative;
     margin-left: 100px;
-    padding: 2.5px;
+    padding: 6.5px;
     margin-bottom: 10px;
     width: 165.5px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 h3 {
@@ -64,16 +66,6 @@ h3 {
     padding-bottom: 25px;
     margin-top: -20px;
     font-size: 30px;
-}
-
-/* #special {
-    margin: auto;
-    width: 35%; 
-} */
-
-h2 {
-    font-family: 'Lekton', sans-serif;
-
 }
 
 h1 {
@@ -94,12 +86,12 @@ article {
 div {
     position: relative;
     float: right;
-    margin-top: -400px;
+    margin-top: -420px;
 }
 
 #menupic {
   top: -220px;
-  left: -24%;
+  left: -20%;
 }
 
 #card {
@@ -107,10 +99,31 @@ div {
     width: 500px;
     height: 300px;
     top: 100%;
-    right: 12%;
+    right: 8%;
     border-width: thin;
     box-shadow: 5px 5px 13px -5px rgba(0,0,0,0.5);
     padding: 50px 50px 0px 50px;
+}
+
+button {
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: goldenrod;
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 180px;
+    font-family: 'Lekton', sans-serif;
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal {
+    display: block;
 }
 
 footer {
