@@ -4,26 +4,6 @@
 
     let windowHeight =  Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
     lastTop;
-    
-    document.getElementById("btn").addEventListener("click", showMemory);
-
-      let memory = document.querySelectorAll(".memory")
-
-      function showMemory() {
-
-        for (i = 0; i < memory.length; ++i) {
-          memory[i].showMemory();
-        }
-
-        if (memory.style.display === "none") {
-          memory.style.display = "block";
-        } else {
-          memory.style.display = "none";
-        }
-
-        return
-      };
-
 
     window.addEventListener('scroll', function(event) {
     const carA = document.getElementById('honda');
