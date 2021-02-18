@@ -1,0 +1,238 @@
+html, body {
+    width: 100%;
+}
+
+body {
+    margin-bottom: 200px;
+    background-color: #444444;
+}
+
+/* each textbox section */
+
+section {
+    position: relative;
+    padding: 50px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    width: 75%;
+    align-self: center;
+    line-height: 1.5em;
+    
+}
+
+/* memory on click */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: lavender;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: lavender transparent transparent transparent;
+}
+.popup .reveal {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+#first {
+    background-color: lavender;
+}
+
+#second {
+    background-color: lavender;
+}
+
+#third {
+    background-color: lavender;
+}
+
+#fourth {
+    background-color: lavender;
+}
+
+/* text formatting */
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    color: papayawhip;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: lavender;
+}
+/* move honda */
+
+#honda {
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+#honda img {
+    transform: translate(0%, -20%);
+    transition: all 4s ease;
+}
+
+#honda.vroom img {
+    transform: translate(190%, -20%);
+}
+
+/*car crash 1*/
+
+#crash1 img{
+    transform: translate(-100%, -20%);
+    transition: all 2s ease;
+    transition-delay: 1s
+}
+
+#crash1.vroom img {
+    transform: translate(120%, -20%);
+}
+ /* move 4runner */
+
+#runner {
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+#runner img {
+    transform: translate(-200%, 0%);
+    transition: all 6s ease;
+}
+
+#runner.vroom img {
+    transform: translate(190%, 0%);
+}
+
+/*car crash 2*/
+
+#crash2 img{
+    transform: translate(-100%,0%);
+    transition: all 2s ease;
+}
+
+#crash2.vroom img {
+    transform: translate(120%,0%);
+}
+
+/* move mazda */
+
+#mazda {
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+#mazda img {
+    transform: translate(0%, -90%);
+    transition: all 3s ease;
+}
+
+#mazda.vroom img {
+    transform: translate(120%, -20%);
+}
+
+/*car crash 3*/
+
+#crash3 img{
+    transform: translate(-100%,0%);
+    transition: all 4s ease;
+}
+
+#crash3.vroom img {
+    transform: translate(200%,-10%);
+}
+
+/* move corolla */
+
+#corolla {
+    margin-top: 200px;
+    margin-bottom: -200px;
+}
+
+#corolla img {
+    transform: translate(-100%, -100%);
+    transition: all 1.5s ease;
+    transition-delay: 1s
+}
+
+#corolla.vroom img {
+    transform: translate(100%, -100%);
+}
+
+/*car crash 4*/
+
+#crash4 img{
+    transform: translate(-100%,90%);
+    transition: all 4s ease;
+}
+
+#crash4.vroom img {
+    transform: translate(200%,90%);
+}
+
+div {
+    display: flex;
+}
+
+/* make image fade in */
+
+/* #pokemon {
+    position: relative;
+    left: 60%;
+    top: -25%;
+    visibility: none;
+    opacity: 0;
+    transition: visibility 1s, opacity 2s linear;
+    transition-delay: 4s;
+}
+
+
+#pokemon.show {
+    visibility: visible;
+    opacity: 1;
+} */
