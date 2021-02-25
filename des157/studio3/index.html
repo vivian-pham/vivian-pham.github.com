@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    
+    <div id="instructions"><button id="howto">How to Play</button></div>
+
+    <h3>GAME OF PIG</h3>
+    <section id="playarea">
+    
+    <!-- new game button -->
+    <div id="gamecontrol"></div>
+       
+        <button id="startgame">Randomly Pick the First Player, and Start the Game</button>
+
+        <article id="layout">
+
+                <div class="player" id="name1">Player 1</div>
+
+            <div id="center">
+                <div id="game"></div>
+                <div id="actions">
+                <button class="btn-roll">Roll dice</button>
+                <button class="btn-hold">Hold</button>
+                </div>
+            </div>
+
+                <div class="player" id="name2">Player 2</div>
+
+        </article>
+        
+        <div id="pig">
+            <div id="speech"></div>
+            <img src="images/pig.png" alt="pig" length="200px" height="160px">
+        </div>
+    </section>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+        <span>|</span>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+        <span>|</span>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+        
+</body>
+</html>
