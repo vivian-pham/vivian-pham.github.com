@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    margin-left: -100px;
+}
+
 a:link {
     color: #ff8870;
 }
