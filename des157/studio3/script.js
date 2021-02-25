@@ -2,6 +2,8 @@
 
     'use strict';
 
+
+    //set variables
     const startGame = document.getElementById('startgame');
         const gameControl = document.getElementById('gamecontrol');
         const game = document.getElementById('game');
@@ -16,6 +18,8 @@
         const reeSound = new Audio('media/ree.mp3');
         const startSound = new Audio('media/start.wav');
     
+
+        //dice data
         const gameData = {
             dice: ['images/1die.png', 'images/2die.png', 'images/3die.png', 
                 'images/4die.png', 'images/5die.png', 'images/6die.png'],
@@ -47,10 +51,12 @@
         });
 
         howto.addEventListener("click", function() {
+            //when button click show instructions
             instruct.innerHTML = `<p>There are two players. The player whose turn it is rolls the dice. The total of the roll is added to the current player's score, unless either die comes up as a "one". If this happens, this player's turn is over, and it is the other player’s turn. After each roll, the current player can either roll again, (assuming a "one" was not rolled) or if the current player feels that luck is running thin, they can pass to the other player. The first player to get 30 points or higher wins.</p>
             <p>Oh, and if you roll two "ones" (snake eyes), your current score gets zeroed out. So don’t do that.</p>`;
         })
 
+        //speech bubble instructions
         function setUpTurn() {
             speech.innerHTML = `<h2>${gameData.players[gameData.index]}'s turn, Roll the Dice!</h2>`;
             actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
@@ -64,13 +70,15 @@
         function throwDice () {
             diceSound.play();
             actionArea.innerHTML = '';
-            gameData.roll1 = Math.floor(Math.random() * 6) +1; //using ceil could result in zero
+            gameData.roll1 = Math.floor(Math.random() * 6) +1; 
             gameData.roll2 = Math.floor(Math.random() * 6) +1;
+            //speech bubble instructions
             speech.innerHTML = `<h2>${gameData.players[gameData.index]}'s turn, Roll the Dice!</h2>`;
             game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> <img src="${gameData.dice[gameData.roll2-1]}">`;
             gameData.rollSum = gameData.roll1 + gameData.roll2
             console.log(gameData);
 
+            //if user rolls 2 pigs
             if ( gameData.rollSum === 2) {
                 reeSound.play();
                 speech.innerHTML += '<h2>Oh no! Two pigs in a pen! </h2>';
@@ -80,6 +88,7 @@
                 setTimeout(setUpTurn, 2000);
             }
 
+            //if user rolls one pig
             else if( gameData.roll1 === 1 || gameData.roll2 === 1) {
                 pigSound.play();
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
@@ -87,6 +96,7 @@
                 setTimeout(setUpTurn, 2000);
             }
 
+            //when user rolls anything but the pig
             else {
                 gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
                 actionArea.innerHTML = '<button id="rollagain">Roll Again</button> <br>or</br> <button id="pass">Pass</button>';
@@ -104,6 +114,7 @@
             }
         }
 
+        //if user has 30+ points
         function checkWinningCondition () {
             if ( gameData.score[gameData.index] > gameData.gameEnd) {
                 speech.innerHTML = `<h2>${gameData.players[gameData.index]}
@@ -120,7 +131,9 @@
 
         function showCurrentScore() {
             
+            //show score for player 1
             playerOne.innerHTML = `<h1><strong>${gameData.players[0]}</strong></h1><h1><strong>${gameData.score[0]}</strong></h1>`;
+            //show score for player 2
             playerTwo.innerHTML = `<h1><strong>${gameData.players[1]}</strong></h1><h1><strong>${gameData.score[1]}</strong></h1>`;
         }
     
