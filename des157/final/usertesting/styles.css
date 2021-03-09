@@ -240,7 +240,7 @@ ul {
     width: 1000px;
     height: 500px;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -250,6 +250,7 @@ ul {
     margin: 40%;
     margin-top: -100px;
     margin-bottom: 100px;
+    z-index: -999;
 }
 .floating {
     animation-name: Floatingx;
