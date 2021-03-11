@@ -2,6 +2,8 @@
 
     'use strict';
 
+
+    // moving car at scroll window
     window.addEventListener('scroll', reveal);
 
     function reveal (){
@@ -13,11 +15,11 @@
             let revealpoint = 950;
 
             if (revealtop < windowHeight-revealpoint) {
-                reveals[i].classList.add('appear');
+                reveals[i].classList.add('appear');     //car moves in
             }
 
             else {
-                reveals[i].classList.remove('appear');
+                reveals[i].classList.remove('appear');  //car moves out
             }
         }
     }
@@ -33,8 +35,9 @@
     const chipSound = new Audio('media/chips.wav');
     const driveSound = new Audio('media/driving.wav');
 
+    //click image
     clickPokeball.addEventListener("click", ()=> {
-        showOne.classList.toggle("show1");
+        showOne.classList.toggle("show1");  //toggle hide/show
         pokeballSound.play();
         pokeballSound.volume(0.5);
     });
@@ -44,6 +47,7 @@
         chipSound.play();
     });
 
+    //background sound buttons
     clickMusic.addEventListener("click", () => {
         driveSound.play();
     })
